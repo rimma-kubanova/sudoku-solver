@@ -166,7 +166,7 @@ def draw_digits_on_warped(warped_img, solved_puzzle, squares_processed):
                 text_origin = (center[0] - text_size[0] // 2, center[1] + text_size[1] // 2)
 
                 cv2.putText(warped_img, str(solved_puzzle[index]),
-                            text_origin, cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
+                            text_origin, cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 0), 2)
             index += 1
 
     return img_w_text
